@@ -10,8 +10,11 @@ var pauseBtn = document.querySelector("#pause");
 var backBtn = document.querySelector("#back");
 var nextBtn = document.querySelector("#next");
 var info = document.querySelector("#information");
-var userName = document.querySelector("#name")
-var art = document.querySelector("#albumArt")
+var userName = document.querySelector("#name");
+var art = document.querySelector("#albumArt");
+var userUrl = document.querySelector("#userUrl");
+
+
 
 
 function Song (){
@@ -28,17 +31,20 @@ function Song (){
   SC.resolve('https://soundcloud.com/particlehearts/sets/film-rescores').then(function(response) {
     this.index = 0;
     this.playlist = response.tracks
-    this.songNames = this.playlist[this.index].title
+    this.songNames = this.playlist[this.index].artwork_url
     console.log(this.songNames)
+  art.setAttribute("src", "https://i1.sndcdn.com/artworks-000127494156-jnbx7s-large.jpg")
+
   var name = response.user.username;
-  userName.innerHTML = name;
+  userName.innerHTML = name + ": Artist";
   var genre = response.genre
   var title = response.title;
   var description = response.description;
-  info.innerHTML = "The genre is " + genre +". " +
-  "The title is " + title + ". " + " Playlist info " + description
- //  var trackId = response.release_date;
- //  var userUrl = response.permalink_url;
+  info.innerHTML = "The genre: " + genre  + "Title: " + title + " Playlist info:" + description
+  var siteUrl = response.permalink_url;
+  userUrl.setAttribute("href",siteUrl)
+
+
  //  var trackName= response.kind;
 
  //  var tracks = response.stream_url;
