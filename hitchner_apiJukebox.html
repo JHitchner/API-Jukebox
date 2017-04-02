@@ -2,11 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="hitchner_apiJukebox.css">
+    <link href="https://fonts.googleapis.com/css?family=Creepster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Eater" rel="stylesheet">
+    <link rel="stylesheet"
+     href="hitchner_apiJukebox.css">
     <script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
     <title></title>
   </head>
   <body>
+    <p id="scary_stream">Scary Stream</p>
     <div class="myButtons">
       <a id="play"href="#">Play</a>
       <a id="pause" href="#">Pause</a>
@@ -14,14 +18,19 @@
       <a id="next" href="#">Next</a>
     </div>
     <div class="info_container">
-      <p id="title"></p>
+      <p id="title_genre"></p>
       <p id="name"></p>
+      <p id="songNames">
+        <li id="songName1"></li>
+        <li id="songName2"></li>
+        <li id="songName3"></li>
+        <li id="songName4"></li>
+      </p>
       <p id="information"></p>
       <a id="userUrl"href="#">Particle Heart's Page</a>
     </div>
-  <img id="albumArt"src="" alt="">
-   <script type="text/javascript" src= "hitchner_apiJukebox.js">
-
-   </script>
+    <img id="albumArt"src="" alt="">
+    <script type="text/javascript" src= "hitchner_apiJukebox.js">
+    </script>
   </body>
 </html>

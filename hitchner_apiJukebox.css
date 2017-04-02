@@ -1,3 +1,12 @@
+#scary_stream{
+  font-size: 40px;
+  color: #586F7C;
+  position:relative;
+  left: 900px;
+  top: 300px;
+  font-family: 'Creepster', cursive;
+}
+
 body{
   background-color: black;
 }
@@ -15,6 +24,7 @@ img{
   left:300px;
   top: 300px;
   z-index: 2;
+
 }
 #play{
   background-color: #586F7C;
@@ -27,6 +37,7 @@ img{
   left:300px;
   top:400px;
   padding: 10px;
+  font-family: 'Eater', cursive;
 }
 #pause{
   background-color: #586F7C;
@@ -39,6 +50,7 @@ img{
   left:300px;
   top:400px;
   padding: 10px;
+  font-family: 'Eater', cursive;
 }
 #back{
   background-color: #586F7C;
@@ -51,6 +63,7 @@ img{
   left:300px;
   top:400px;
   padding: 10px;
+  font-family: 'Eater', cursive;
 }
 #next{
   background-color: #586F7C;
@@ -63,40 +76,74 @@ img{
   left:300px;
   top:400px;
   padding: 10px;
+  font-family: 'Eater', cursive;
 }
 .info_container{
-background-color: #586F7C;
-position: relative;
-height: 500px;
-width: 800px;
-left: 600px;
-top: 300px;
-border: 2px solid black;
-border-radius: 20px;
+  background-color: #586F7C;
+  position: relative;
+  height: 500px;
+  width: 800px;
+  left: 600px;
+  top: 300px;
+  border: 2px solid black;
+  border-radius: 20px;
 }
 #information{
-  /*background-color: #F4F4F9;*/
   font-size: 20px;
   position: relative;
   height: 100px;
   width: 400px;
-  top: -50px;
+  top: 0px;
   left: 350px;
   padding: 10px;
   border: 0px;
   border-radius: 10px;
 }
 #name{
-  /*background-color: #F4F4F9;*/
   font-size: 20px;
   position: relative;
   height: 40px;
   width: 200px;
-  top:420px;
+  top:400px;
   left:30px;
 }
 #userUrl{
   position: relative;
   left: 30px;
-  top: 200px;
+  top: 30px;
+}
+#title_genre{
+  font-family: 'Eater', cursive;
+  position: relative;
+  left: 400px;
+  font-size: 20px;
+  top: 50px;
+}
+#songName1{
+  color: black;
+  height: 30px;
+  width: 300px;
+  position: relative;
+  left: 400px;
+}
+#songName2{
+  color: black;
+  height: 30px;
+  width: 300px;
+  position: relative;
+  left: 400px;
+}
+#songName3{
+  color: black;
+  height: 30px;
+  width: 300px;
+  position: relative;
+  left: 400px;
+}
+#songName4{
+  color: black;
+  height: 30px;
+  width: 400px;
+  position: relative;
+  left: 400px;
 }
