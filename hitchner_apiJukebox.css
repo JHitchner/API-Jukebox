@@ -93,7 +93,7 @@ img{
   position: relative;
   height: 100px;
   width: 400px;
-  top: 0px;
+  top: 70px;
   left: 350px;
   padding: 10px;
   border: 0px;
@@ -104,13 +104,13 @@ img{
   position: relative;
   height: 40px;
   width: 200px;
-  top:400px;
+  top:380px;
   left:30px;
 }
 #userUrl{
   position: relative;
   left: 30px;
-  top: 30px;
+  top: -60px;
 }
 #title_genre{
   font-family: 'Eater', cursive;
@@ -126,12 +126,22 @@ img{
   position: relative;
   left: 400px;
 }
+#songLink1{
+  position: relative;
+  left: 430px;
+  top: -10px;
+}
 #songName2{
   color: black;
   height: 30px;
   width: 300px;
   position: relative;
   left: 400px;
+}
+#songLink2{
+  position: relative;
+  left: 430px;
+  top: -10px;
 }
 #songName3{
   color: black;
@@ -140,10 +150,20 @@ img{
   position: relative;
   left: 400px;
 }
+#songLink3{
+  position: relative;
+  left: 430px;
+  top: -10px;
+}
 #songName4{
   color: black;
   height: 30px;
   width: 400px;
   position: relative;
   left: 400px;
+}
+#songLink4{
+  position: relative;
+  left: 430px;
+  top: -10px;
 }

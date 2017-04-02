@@ -15,6 +15,10 @@ var trackName2 = document.querySelector("#songName2");
 var trackName3 = document.querySelector("#songName3");
 var trackName4 = document.querySelector("#songName4");
 var titleGenre = document.querySelector("#title_genre");
+var songLink1 = document.querySelector("#songLink1");
+var songLink2 = document.querySelector("#songLink2");
+var songLink3 = document.querySelector("#songLink3");
+var songLink4 = document.querySelector("#songLink4");
 var name;
 var genre;
 var title;
@@ -37,8 +41,16 @@ Song.prototype.getInfo = function (){
     this.index = 0;
     this.playlist = response.tracks;
     this.playlist[this.index].artwork_url;
-    // Having a hard time finding an eloquent solution to the track names. Still working on it. 
+    // Having a hard time finding an eloquent solution to the track names. Still working on it.
     trackName1.innerHTML = this.playlist[0].title;
+    songOne = this.playlist[0].permalink_url;
+    songLink1.setAttribute("href",songOne);
+    songTwo = this.playlist[1].permalink_url;
+    songLink2.setAttribute("href",songTwo);
+    songThree = this.playlist[2].permalink_url;
+    songLink3.setAttribute("href",songThree);
+    songFour= this.playlist[3].permalink_url;
+    songLink4.setAttribute("href",songFour);
     trackName2.innerHTML = this.playlist[1].title;
     trackName3.innerHTML = this.playlist[2].title;
     trackName4.innerHTML = this.playlist[3].title;
