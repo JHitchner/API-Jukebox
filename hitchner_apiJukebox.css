@@ -1,0 +1,21 @@
+body{
+  background-color: black;
+}
+#play{
+  background-color: steelblue;
+  width: 40px;
+  height:40px;
+  position: relative;
+}
+#pause{
+  background-color: steelblue;
+  width: 40px;
+  height:40px;
+  position: relative;
+}
+#information{
+  background-color: white;
+}
+#name{
+  background-color: white;
+}
